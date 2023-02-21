@@ -1,0 +1,12 @@
+.hero-banner-container {
+  width: 100%;
+  padding: 6.25em 2.5em;
+  background-color: var(--card-color);
+  border-radius: 15px;
+  position: relative;
+  height: 500px;
+  line-height: 0.9;
+}
+.hero-banner-container .hero-sofa {
+  font-size: 1.2rem;
+}

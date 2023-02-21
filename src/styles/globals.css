@@ -1,5 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700&display=swap');
 
+:root {
+  --bg-color: #f2f7f5;
+  --card-color: #fffffe;
+  --header-color: #00473e;
+  --text-color: #475d5b;
+  --btn-color: #faae2b;
+  --btn-hover: #fcbe53;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+htmls,
 body {
+  padding: 0;
+  margin: 0;
   font-family: 'Hanken Grotesk', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.products-heading {
+  text-align: center;
+  margin: 40px 0px;
+  color: var(--header-color);
+}
+.products-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.products-heading p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
 }

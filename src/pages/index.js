@@ -1,8 +1,21 @@
+import { HeroBanner, Product, FooterBanner } from '../../components'
 import React from 'react'
 
-const Home = () => {
+function Home() {
   return (
-    <>Home</>
+    <>
+      <HeroBanner />
+
+      <div className='products-heading'>
+        <h2>The Best of Modern Furniture</h2>
+        <p>Great Selection of Furniture, Décor and More! </p>
+      </div>
+      <div className='products-container'>
+        {['product1', 'product2'].map((product) => product)}
+      </div>
+
+      <FooterBanner />
+    </>
   )
 }
 

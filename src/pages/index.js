@@ -15,7 +15,7 @@ function Home({ products, banners}) {
         {products.map((product) => <Product key={product._id} product={product} />)}
       </div>
 
-      <FooterBanner />
+      <FooterBanner footerData={banners[0]} />
     </>
   )
 }

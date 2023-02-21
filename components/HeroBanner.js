@@ -13,12 +13,12 @@ function HeroBanner({ bannerData }) {
         <p className='hero-sofa'>{bannerData.smallText}</p>
         <h3>{bannerData.midText}</h3>
         <div>
-          <Link href='/product/ID'>
-            <button type='button'>TEXT</button>
+          <Link href={`/product/${bannerData.product}`}>
+            <button type='button'>{bannerData.buttonText}</button>
           </Link>
           <div className='desc'>
-            <h5>Description</h5>
-            <p>DESC HERE</p>
+            <h5>{bannerData.product}</h5>
+            <p>{bannerData.desc}</p>
           </div>
         </div>
       </div>

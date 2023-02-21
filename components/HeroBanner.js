@@ -1,17 +1,17 @@
 import Link from 'next/link'
 import React from 'react'
+import { urlFor } from 'lib/client'
 
-function HeroBanner() {
+function HeroBanner({ bannerData }) {
+  console.log(bannerData)
   return (
-    <div className='hero-banner-container'>
+    <div
+      className='hero-banner-container'
+      style={{ backgroundImage: `url(${urlFor(bannerData.image)})` }}
+    >
       <div>
-        <p className='hero-sofa'>SMALL TEXT</p>
-        <h3>MID TEXT</h3>
-        <img
-          className='hero-banner-image'
-          src=''
-          alt='Logan Upholstered Loveseat'
-        />
+        <p className='hero-sofa'>{bannerData.smallText}</p>
+        <h3>{bannerData.midText}</h3>
         <div>
           <Link href='/product/ID'>
             <button type='button'>TEXT</button>
